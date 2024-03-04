@@ -1,6 +1,6 @@
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Sora, Space_Grotesk } from "next/font/google";
 
-export const inter = Inter({
+export const sora = Sora({
   subsets: ["latin"],
   display: "swap",
 });
