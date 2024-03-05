@@ -46,12 +46,12 @@ export default function Header() {
         <motion.nav
           initial={{ opacity: "0" }}
           animate={{ opacity: "100%" }}
-          className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          className={`${openNavigation ? "flex" : "hidden"} fixed top-14 left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row max-sm:gap-6">
             {navlink.map((link) => (
               <Link
-                className={`relative uppercase font-semibold px-4 py-2 hover:text-yellow-400 rounded-xl transition-color ease-linear duration-300`}
+                className={`relative uppercase text-sm font-semibold px-4 py-2 hover:text-yellow-400 rounded-xl transition-color ease-linear duration-300`}
                 key={link.key}
                 href={link.pathname}
                 onClick={handleClick}
@@ -64,7 +64,7 @@ export default function Header() {
         </motion.nav>
         <div className="flex items-center">
           <ButtonLink
-            className="hidden lg:flex bg-yellow-500 text-yellow-950 border-b-4 border-yellow-700 border"
+            className="hidden lg:flex text-sm gradient"
             href={"/"}
             icon={<Rocket />}
             text="SUBSCRIBE NOW!"
