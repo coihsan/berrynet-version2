@@ -2,13 +2,13 @@ import ButtonLink from "./UI/Button";
 import Section from "@/app/components/Section";
 import { useRef } from "react";
 import { spacegrotesk, sora } from "@/app/components/UI/fonts";
-import { LocateFixed, Ticket } from "lucide-react";
+import { LocateFixed, Sparkles } from "lucide-react";
 import Image from "next/image";
 export default function Hero() {
   return (
     <>
       <Section
-        className=" mt-[1.25rem]"
+        className="mt-[1.25rem]"
         crosses
         crossesOffset="lg:translate-y-[5.25rem]"
         customPaddings
@@ -34,7 +34,7 @@ export default function Hero() {
               <ButtonLink
                 className={"gradient text-white w-max mx-auto mt-6"}
                 href={"/"}
-                icon={<Ticket />}
+                icon={<Sparkles />}
                 text="Our Promo"
               />
               <ButtonLink

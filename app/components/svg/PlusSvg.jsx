@@ -1,11 +1,6 @@
 const PlusSvg = ({ className = "" }) => {
   return (
-    <svg className={`${className} || ""`} width="11" height="11" fill="none">
-      <path
-        d="M7 1a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1H1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V8a1 1 0 0 1 1-1h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H8a1 1 0 0 1-1-1V1z"
-        fill="#ada8c4"
-      />
-    </svg>
+    <svg className={`${className} || ""`} width="13" height="13" fill="none" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" d="M3 12c6.268 0 9-2.637 9-9c0 6.363 2.713 9 9 9c-6.287 0-9 2.713-9 9c0-6.287-2.732-9-9-9Z"/></svg>
   );
 };
 
