@@ -10,11 +10,14 @@ body {
   color: #ffffff;
 }
 .overlays {
-  background: radial-gradient(circle at 50% 50%, #15131d 0%, #0e0c15);
+  background: radial-gradient(circle at 0% 140%, #240078 0%, #0a001f);
 }
 @layer utilities {
   .gradient {
     @apply bg-gradient-to-r from-purple-600 to-pink-800;
+  }
+  .flexJustifyCenter {
+    @apply flex items-center justify-center;
   }
 }
 @layer components {

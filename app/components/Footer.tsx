@@ -8,7 +8,7 @@ export default function Footer() {
       <Section id={footer} className="" crosses crossesOffset="" customPaddings>
         <footer className="container relative">
           <div className="w-full pt-12">
-            <div className="flex items-center justify-between w-full">
+            <div className="lg:flex items-center justify-between w-full max-sm:flex-col">
               <div className="flex flex-col max-sm:mb-6">
                 <Image
                   src={"/berrynet-01.svg"}
@@ -16,20 +16,22 @@ export default function Footer() {
                   height={40}
                   alt="logo"
                 />
-                <span className="max-w-sm text-n-3">
+                <span className="max-w-md text-n-3 mt-6">
                   Our company is committed to providing the best possible
                   internet service to our customers. We offer a variety of plans
                   to fit every budget and need, and we guarantee fast, reliable
                   connections.
                 </span>
-                <div className="grid grid-cols-2">
-                  {advantage.map((icons) => (
-                    <div className="flex items-center" key={icons.id}>
-                      <div className="w-9 h-9">{icons.icon}</div>
-                      <span>{icons.title}</span>
+              </div>
+              <div className="grid grid-cols-2 gap-6">
+                {advantage.map((icons) => (
+                  <div className="flex items-center gap-6" key={icons.id}>
+                    <div className="text-xl p-3 flexJustifyCenter border rounded-lg">
+                      {icons.icon}
                     </div>
-                  ))}
-                </div>
+                    <span>{icons.title}</span>
+                  </div>
+                ))}
               </div>
             </div>
             <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-9 mt-12 mx-auto">

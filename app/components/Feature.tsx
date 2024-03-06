@@ -5,7 +5,13 @@ import Section from "./Section";
 import { ChevronRight } from "lucide-react";
 export default function Feature() {
   return (
-    <Section id={feature}>
+    <Section
+      id={feature}
+      className="mt-[1.25rem]"
+      crosses
+      crossesOffset="lg:translate-y-[5.25rem]"
+      customPaddings
+    >
       <div className="container">
         <h1 className={`${spacegrotesk.className} text-center h2 font-bold`}>
           Empower Your Internet Experience with AI

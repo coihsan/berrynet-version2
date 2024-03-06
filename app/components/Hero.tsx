@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
           <div className="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
         </div>
-        <div className="container relative lg:pt-[12rem] pt-[7rem]">
+        <div className="container relative lg:pt-[12rem] pt-[7rem] z-10">
           <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
             <h1 className={`${sora.className} h1 mb-6`}>
               AI-powered Internet for Unprecedented Speed and Stability
@@ -49,9 +49,9 @@ export default function Hero() {
           <div className="relative mx-auto lg:w-6/12 md:w-8/12 xl:mb-24">
             <div className="relative z-1 p-0.5 rounded-full bg-conic-gradient">
               <div className="relative overlays rounded-full">
-                <div className="relative rounded-full overflow-hidden bg-bottom ">
+                <div className="relative rounded-full overflow-hidden flexJustifyCenter ">
                   <Image
-                    className="rounded-full aspect-square w-full object-cover -z-1"
+                    className=" aspect-square w-full object-cover -z-1 object-center lg:translate-y-20 max-sm:translate-y-12 "
                     src={"/robotai.png"}
                     width={700}
                     height={535}
@@ -62,6 +62,15 @@ export default function Hero() {
             </div>
             <AI />
           </div>
+        </div>
+        <div className="absolute z-1 top-[14%] opacity-[0.2] ">
+          <Image
+            className="blur-3xl"
+            src={"/gradient.png"}
+            width={1440}
+            height={1800}
+            alt="background hero section"
+          />
         </div>
       </Section>
     </>
