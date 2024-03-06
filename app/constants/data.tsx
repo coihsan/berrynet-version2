@@ -1,12 +1,14 @@
 import {
   ThumbsUp,
-  ShieldBan,
+  ShieldCheck,
   ScanSearch,
   LineChart,
   Bot,
   BrainCircuit,
+  MonitorCheck,
+  Wifi,
+  Router,
 } from "lucide-react";
-import { ElementRef, ReactElement } from "react";
 export const navlink = [
   {
     key: 0,
@@ -41,7 +43,14 @@ interface featureProps {
   description: string;
   icon: JSX.Element;
   color: string;
+  pathname: string;
 }
+export const advantage: Partial<featureProps> = [
+  { id: 0, title: "AI-Powered Solution", icon: <MonitorCheck /> },
+  { id: 1, title: "Wireless Home Network", icon: <Router /> },
+  { id: 2, title: "Stable Internet Connection", icon: <Wifi /> },
+  { id: 3, title: "High Definition TV Channels", icon: <MonitorCheck /> },
+];
 export const feature: featureProps[] = [
   {
     id: 0,
@@ -50,14 +59,16 @@ export const feature: featureProps[] = [
       "AI algorithms can analyze user behavior and preferences to provide tailored recommendations for content, products, and services, enhancing the overall user experience.",
     icon: <ThumbsUp />,
     color: "bg-purple-500",
+    pathname: "/",
   },
   {
     id: 1,
     title: "Enhanced Security",
     description:
       "AI-powered security measures can detect and prevent various online threats, such as malware, phishing attacks, and identity theft, offering users a safer browsing environment.",
-    icon: <ShieldBan />,
+    icon: <ShieldCheck />,
     color: "bg-teal-500",
+    pathname: "/",
   },
   {
     id: 2,
@@ -66,6 +77,7 @@ export const feature: featureProps[] = [
       "AI algorithms can understand user intent better and deliver more relevant search results, saving users time and effort in finding the information they need.",
     icon: <ScanSearch />,
     color: "bg-pink-500",
+    pathname: "/",
   },
   {
     id: 3,
@@ -74,6 +86,7 @@ export const feature: featureProps[] = [
       "AI can analyze vast amounts of data to predict trends and patterns, helping users make informed decisions about their online activities, such as investments, purchasing decisions, and content creation strategies.",
     icon: <LineChart />,
     color: "bg-rose-500",
+    pathname: "/",
   },
   {
     id: 4,
@@ -82,6 +95,7 @@ export const feature: featureProps[] = [
       "AI-driven automation can streamline repetitive tasks, such as email filtering, content moderation, and customer support, freeing up users' time and increasing productivity.",
     icon: <Bot />,
     color: "bg-green-500",
+    pathname: "/",
   },
   {
     id: 5,
@@ -90,5 +104,138 @@ export const feature: featureProps[] = [
       "AI-powered internet services can seamlessly integrate with other smart devices and platforms, offering users a cohesive and interconnected digital experience across various devices and applications.",
     icon: <BrainCircuit />,
     color: "bg-indigo-500",
+    pathname: "/",
+  },
+];
+
+export const footer = [
+  {
+    id: 0,
+    title: "Quick Links",
+    link: [
+      {
+        id: 0,
+        text: "Home Internet",
+        pathname: "/",
+      },
+      {
+        id: 1,
+        text: "Apartment Internet",
+        pathname: "/",
+      },
+      {
+        id: 2,
+        text: "Business Internet",
+        pathname: "/",
+      },
+      {
+        id: 3,
+        text: "Coverage",
+        pathname: "/",
+      },
+      {
+        id: 4,
+        text: "Subscribe",
+        pathname: "/",
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: "Our Products",
+    link: [
+      {
+        id: 0,
+        text: "Internet Fiber",
+        pathname: "/",
+      },
+      {
+        id: 1,
+        text: "Internet + TV",
+        pathname: "/",
+      },
+      {
+        id: 2,
+        text: "Phone",
+        pathname: "/",
+      },
+      {
+        id: 3,
+        text: "berrynet TV",
+        pathname: "/",
+      },
+      {
+        id: 4,
+        text: "berrynet Shop",
+        pathname: "/",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Help & Support",
+    link: [
+      {
+        id: 0,
+        text: "Help Center",
+        pathname: "/",
+      },
+      {
+        id: 1,
+        text: "Contact Us",
+        pathname: "/",
+      },
+      {
+        id: 2,
+        text: "Costumer Service",
+        pathname: "/",
+      },
+      {
+        id: 3,
+        text: "FAQ",
+        pathname: "/",
+      },
+      {
+        id: 4,
+        text: "Payment Method",
+        pathname: "/",
+      },
+      {
+        id: 5,
+        text: "Privacy Policy",
+        pathname: "/",
+      },
+      {
+        id: 6,
+        text: "Security",
+        pathname: "/",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Our Company",
+    link: [
+      {
+        id: 0,
+        text: "About berrynet",
+        pathname: "/",
+      },
+      {
+        id: 1,
+        text: "Career",
+        pathname: "/",
+      },
+      {
+        id: 2,
+        text: "Media",
+        pathname: "/",
+      },
+      {
+        id: 3,
+        text: "berrynet TV",
+        pathname: "/",
+      },
+    ],
   },
 ];
