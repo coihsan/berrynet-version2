@@ -38,22 +38,21 @@ export default function Hero() {
                 text="Our Promo"
               />
               <ButtonLink
-                className={"bg-n-6 text-n-2 w-max mx-auto mt-6 hover:text-n-1"}
+                className={"bg-n-2 text-n-9 w-max mx-auto mt-6 hover:text-n-6"}
                 href={"/"}
                 icon={<LocateFixed />}
-                text="Check Your Area"
+                text="Check Area"
               />
             </div>
           </div>
-          <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
-            <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-              <div className="relative bg-n-8 rounded-[1rem]">
-                <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-                <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490] bg-center">
-                  <img
-                    className="rounded-xl w-full"
-                    src={"/robot.jpg"}
-                    width={900}
+          <div className="relative mx-auto lg:w-6/12 md:w-8/12 xl:mb-24">
+            <div className="relative z-1 p-0.5 rounded-full bg-conic-gradient">
+              <div className="relative overlays rounded-full">
+                <div className=" flex items-center justify-center rounded-full overflow-hidden bg-bottom ">
+                  <Image
+                    className="rounded-full aspect-square w-full object-cover -z-1"
+                    src={"/robotai.png"}
+                    width={700}
                     height={535}
                     alt="robot"
                   />

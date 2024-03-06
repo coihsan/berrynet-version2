@@ -8,7 +8,7 @@ interface Props {
 const ButtonLink = ({ className, text, href, icon }: Props) => {
   return (
     <Link
-      className={`${className} flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-bold`}
+      className={`${className} flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-semibold`}
       href={href}
     >
       <span>{icon}</span>

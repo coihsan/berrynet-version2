@@ -30,8 +30,11 @@ export default function Feature() {
                 <div className={`${item.color} mt-auto p-2 rounded-md w-max`}>
                   {item.icon}
                 </div>
-                <Link href={"#"} className="flex items-center gap-4">
-                  <span className="tracking-wide uppercase font-code text-xs font-bold text-n-1 hover:text-yellow-500">
+                <Link
+                  href={"#"}
+                  className="flex items-center gap-4 hover:text-yellow-500 transition-all ease-in-out duration-300"
+                >
+                  <span className="tracking-wide uppercase font-code text-xs font-bold ">
                     Explore More
                   </span>
                   <ChevronRight />

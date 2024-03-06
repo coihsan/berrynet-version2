@@ -51,7 +51,7 @@ export default function Header() {
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row max-sm:gap-6">
             {navlink.map((link) => (
               <Link
-                className={`relative uppercase text-sm font-semibold px-4 py-2 hover:text-yellow-400 rounded-xl transition-color ease-linear duration-300`}
+                className={`relative uppercase text-sm font-semibold px-4 py-2 hover:text-purple-400 rounded-xl transition-color ease-linear duration-300`}
                 key={link.key}
                 href={link.pathname}
                 onClick={handleClick}
