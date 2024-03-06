@@ -8,7 +8,7 @@ export default function Footer() {
       <Section id={footer} className="" crosses crossesOffset="" customPaddings>
         <footer className="container relative">
           <div className="w-full pt-12">
-            <div>
+            <div className="flex items-center justify-between w-full">
               <div className="flex flex-col max-sm:mb-6">
                 <Image
                   src={"/berrynet-01.svg"}
@@ -22,8 +22,13 @@ export default function Footer() {
                   to fit every budget and need, and we guarantee fast, reliable
                   connections.
                 </span>
-                <div>
-                  <div>{advantage.icon}</div>
+                <div className="grid grid-cols-2">
+                  {advantage.map((icons) => (
+                    <div className="flex items-center" key={icons.id}>
+                      <div className="w-9 h-9">{icons.icon}</div>
+                      <span>{icons.title}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

@@ -30,8 +30,8 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm px-6 py-4 ${
-          openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
+        className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between  border-b border-n-8 lg:bg-n-12/90 lg:backdrop-blur-sm px-6 py-4 ${
+          openNavigation ? "bg-n-12" : "bg-n-13/90 backdrop-blur-sm"
         }`}
       >
         <Link href={"/"}>
@@ -46,7 +46,7 @@ export default function Header() {
         <motion.nav
           initial={{ opacity: "0" }}
           animate={{ opacity: "100%" }}
-          className={`${openNavigation ? "flex" : "hidden"} fixed top-14 left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          className={`${openNavigation ? "flex" : "hidden"} fixed top-14 left-0 right-0 bottom-0 bg-n-12 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row max-sm:gap-6">
             {navlink.map((link) => (

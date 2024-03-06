@@ -45,7 +45,7 @@ interface featureProps {
   color: string;
   pathname: string;
 }
-export const advantage: Partial<featureProps> = [
+export const advantage = [
   { id: 0, title: "AI-Powered Solution", icon: <MonitorCheck /> },
   { id: 1, title: "Wireless Home Network", icon: <Router /> },
   { id: 2, title: "Stable Internet Connection", icon: <Wifi /> },

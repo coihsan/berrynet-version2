@@ -13,7 +13,7 @@ export default function Feature() {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mt-12">
           {feature.map((item) => (
             <div
-              className="p-9 bg-n-7 rounded-2xl border border-n-6"
+              className="p-9 bg-n-12 rounded-2xl border border-n-9"
               key={item.id}
             >
               <div className="flex flex-col min-h-[14rem]">
@@ -26,12 +26,12 @@ export default function Feature() {
                   {item.description}
                 </span>
               </div>
-              <div className="flex items-center justify-between gap-5 border-t-[1px] border-n-6 pt-5">
+              <div className="flex items-center justify-between gap-5 border-t-[1px] border-n-9 pt-5">
                 <div className={`${item.color} mt-auto p-2 rounded-md w-max`}>
                   {item.icon}
                 </div>
                 <Link href={"#"} className="flex items-center gap-4">
-                  <span className="tracking-wide uppercase font-code text-xs font-bold text-n-1">
+                  <span className="tracking-wide uppercase font-code text-xs font-bold text-n-1 hover:text-yellow-500">
                     Explore More
                   </span>
                   <ChevronRight />
