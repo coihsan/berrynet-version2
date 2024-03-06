@@ -30,8 +30,8 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between  border-b border-n-8 lg:bg-n-12/90 lg:backdrop-blur-sm px-6 py-4 ${
-          openNavigation ? "bg-n-12" : "bg-n-13/90 backdrop-blur-sm"
+        className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between  border-b border-n-1/20 lg:bg-n-13/90 lg:backdrop-blur-sm px-6 py-4 ${
+          openNavigation ? "bg-n-13" : "bg-n-13/90 backdrop-blur-sm"
         }`}
       >
         <Link href={"/"}>

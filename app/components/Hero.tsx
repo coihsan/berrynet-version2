@@ -3,6 +3,7 @@ import Section from "@/app/components/Section";
 import { useRef } from "react";
 import { spacegrotesk, sora } from "@/app/components/UI/fonts";
 import { LocateFixed, Sparkles } from "lucide-react";
+import { AI } from "./design/AI";
 import Image from "next/image";
 export default function Hero() {
   return (
@@ -48,7 +49,7 @@ export default function Hero() {
           <div className="relative mx-auto lg:w-6/12 md:w-8/12 xl:mb-24">
             <div className="relative z-1 p-0.5 rounded-full bg-conic-gradient">
               <div className="relative overlays rounded-full">
-                <div className=" flex items-center justify-center rounded-full overflow-hidden bg-bottom ">
+                <div className="relative rounded-full overflow-hidden bg-bottom ">
                   <Image
                     className="rounded-full aspect-square w-full object-cover -z-1"
                     src={"/robotai.png"}
@@ -59,6 +60,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+            <AI />
           </div>
         </div>
       </Section>
