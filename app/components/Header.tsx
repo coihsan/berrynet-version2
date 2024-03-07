@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { Rocket } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { navlink } from "../constants/data";
+import { navlink } from "../constants/";
 import { HamburgerMenu } from "@/app/components/design/Header";
 import MenuSvg from "@/app/components/svg/menu";
 export default function Header() {

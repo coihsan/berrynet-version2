@@ -1,5 +1,6 @@
 import ButtonLink from "./UI/Button";
 import Section from "@/app/components/Section";
+import Feature from "@/app/components/Feature"
 import { useRef } from "react";
 import { spacegrotesk, sora } from "@/app/components/UI/fonts";
 import { LocateFixed, Sparkles } from "lucide-react";
@@ -72,6 +73,7 @@ export default function Hero() {
             alt="background hero section"
           />
         </div>
+        <Feature />
       </Section>
     </>
   );

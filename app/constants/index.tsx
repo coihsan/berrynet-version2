@@ -239,3 +239,93 @@ export const footer = [
     ],
   },
 ];
+// home internet
+export const berryinternet = [
+  {
+    id: 0,
+    packageName: "Berry 30",
+    bandwith: "30 Mbps",
+    fitur: [
+      "Internet UNLIMITED",
+      "Ideal untuk 1 - 3 Device",
+      "Gratis Instalasi",
+    ],
+    normalprice: "150.000",
+    discountprice: "100.000",
+    badge: Boolean,
+  },
+  {
+    id: 0,
+    packageName: "Berry 50",
+    bandwith: "50 Mbps",
+    fitur: [
+      "Internet UNLIMITED",
+      "Ideal untuk 1 - 3 Device",
+      "Gratis Instalasi",
+    ],
+    normalprice: "150.000",
+    discountprice: "100.000",
+    badge: Boolean,
+  },
+  {
+    id: 0,
+    packageName: "Berry 100",
+    bandwith: "100 Mbps",
+    fitur: [
+      "Internet UNLIMITED",
+      "Ideal untuk 1 - 3 Device",
+      "Gratis Instalasi",
+    ],
+    normalprice: "150.000",
+    discountprice: "100.000",
+    badge: Boolean,
+  },
+  {
+    id: 0,
+    packageName: "Berry 150",
+    bandwith: "150 Mbps",
+    fitur: [
+      "Internet UNLIMITED",
+      "Ideal untuk 1 - 3 Device",
+      "Gratis Instalasi",
+    ],
+    normalprice: "150.000",
+    discountprice: "100.000",
+    badge: Boolean,
+  },
+];
+// internet + TV
+export const berrycombo = [
+  {
+    id: 0,
+    packageName: "Berry 30 Combo",
+    bandwith: "30 Mbps",
+    fitur: [
+      "Internet UNLIMITED",
+      "Ideal untuk 1 - 3 Device",
+      "Gratis Instalasi",
+    ],
+    normalprice: "200.000",
+    discountprice: "150.000",
+    badge: Boolean,
+    totalchannel: "75",
+  },
+];
+// Internet + TV + Phone
+
+export const berrybigcombo = [
+  {
+    id: 0,
+    packageName: "Berry 30 Combo",
+    bandwith: "30 Mbps",
+    fitur: [
+      "Internet UNLIMITED",
+      "Ideal untuk 1 - 3 Device",
+      "Gratis Instalasi",
+    ],
+    normalprice: "250.000",
+    discountprice: "200.000",
+    badge: Boolean,
+    totalchannel: "75",
+  },
+];

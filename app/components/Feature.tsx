@@ -1,4 +1,4 @@
-import { feature } from "@/app/constants/data";
+import { feature } from "@/app/constants";
 import { spacegrotesk } from "./UI/fonts";
 import Link from "next/link";
 import Section from "./Section";
@@ -10,7 +10,7 @@ export default function Feature() {
       className="mt-[1.25rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddings
+      customPaddings="py-[5.25rem]"
     >
       <div className="container">
         <h1 className={`${spacegrotesk.className} text-center h2 font-bold`}>

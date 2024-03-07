@@ -1,4 +1,4 @@
-import { footer, advantage } from "../constants/data";
+import { footer, advantage } from "../constants";
 import Link from "next/link";
 import Image from "next/image";
 import Section from "./Section";
